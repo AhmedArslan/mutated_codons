@@ -37,6 +37,10 @@
     """ codon calculations where ref and mutant base unknown """
 
     try:
+        id_map('protein-id-file', 'gff file')
+    except IOError:
+            pass
+    try:
         cc_mapping('mutation.txt', 'd_id_map.txt')
     except IOError:
             pass
