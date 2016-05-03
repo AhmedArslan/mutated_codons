@@ -36,9 +36,8 @@
 
     """ codon calculations where ref and mutant base unknown """
 
-    start_time = time.time()
     try:
-        co.cc_mapping('mutation.txt', 'd_id_map.txt')
+        cc_mapping('mutation.txt', 'd_id_map.txt')
     except IOError:
             pass
     return "codons are available to map on functional entities"
