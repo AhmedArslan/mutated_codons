@@ -46,4 +46,5 @@
             pass
     return "codons are available to map on functional entities"
     
-    
+    if __name__ == "__main__":
+        code()
